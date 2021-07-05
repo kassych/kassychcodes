@@ -1,0 +1,1 @@
+Get-NetIPAddress -SuffixOrigin Dhcp | ft IPAddress -HideTableHeaders
