@@ -7,4 +7,4 @@ elif a == 'spathiphyllum':
 else:
     print ("Spathiphyllum! Not ;", a ,"!")
     
-
+print ("End of Code")
