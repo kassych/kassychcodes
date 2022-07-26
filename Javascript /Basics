@@ -89,6 +89,15 @@ console.log(second.length);
 console.log(third.length);
 console.log(fourth);
 
+// converting to uppercase
+
+const first_name = "Graham";
+const second_name = "Kasindo"
+const first_upper = first_name.toUpperCase();
+const second_upper = second_name.toUpperCase();
+console.log(first_upper);
+console.log (second_upper);
+
 
 
 
