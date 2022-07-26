@@ -1,10 +1,10 @@
 const message = 'Hello Java Coder ? ' // Try edit me
-
+//const document = message; will figure it out
 // Update header text
-document.querySelector('#header').innerHTML = message
+//document.querySelector('#header').innerHTML = message; what is this?
 
 // Log to console
-console.log(message)
+//console.log(document); will edit once i learn more
 
 // adding two variables
 var number_1 = 54;
@@ -104,6 +104,15 @@ console.log(second_upper.length) //length property
 
 console.log(second_upper[2]);
 console.log("First Name last Character is ;" + first_upper[first_upper.length - 1]) // picking the last character of the first name
+
+// using charAt()method for the same
+
+const age = "Iam 6 years old.";
+const index = 4;
+console.log(`The value that is indicated at ${index, "location"} is ${age.charAt(index)} years old`);
+
+
+
 
 
 
