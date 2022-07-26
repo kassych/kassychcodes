@@ -1,0 +1,110 @@
+const message = 'Hello Java Coder ? ' // Try edit me
+
+// Update header text
+document.querySelector('#header').innerHTML = message
+
+// Log to console
+console.log(message)
+
+// adding two variables
+var number_1 = 54;
+var number_2 = 34;
+
+varsum = number_1 + number_2;
+console.log(varsum);
+//checking for unicode substitution
+const message_1 = '\u0048\u0065\u006c\u006c\u006f';
+console.log(message_1);
+console.log(message_1 === 'Hello');
+console.log(message_1.length);
+// checking for length of unicode
+
+let dollarSymbol = '$';
+let smileyEmoji = '😀';
+
+console.log(`The length of the dollar symbol is : ${dollarSymbol.length}`);
+console.log(`the length of smiley Emoji is : ${smileyEmoji.length}`);
+console.log(smileyEmoji);
+
+//from code point usage; where you get strings from unicode and have them displayed--i think
+
+String.fromCodePoint(9733)
+String.fromCodePoint(9842)
+console.log(String.fromCodePoint(0x2f804))
+
+console.log(String.fromCodePoint(9733, 9842, 0x2f804))
+
+//array of code points
+
+const myCodePoints = [9733, 9842, 7786, 5562, 9877, 2323, 4641, 7389];
+
+// using the spread operator
+const arrayCodePoints = String.fromCodePoint(...myCodePoints);
+console.log(arrayCodePoints);
+
+// getting to identify character code points in a message
+
+const message_2 = "hi kassych";
+const codePointArray = [];
+for (let k = 0; k < message_2.length; k++) {
+    let codePoint = message_2.codePointAt(k);
+    codePointArray[k] = codePoint;
+    //returning the message_2 constant
+    console.log(String.fromCodePoint(...codePointArray));
+}
+
+//exploring different string methods
+
+//repeat
+
+const A = ("woof ");
+const repeatValue = A.repeat(3);
+console.log(repeatValue);
+
+// exploring trim()
+const B = (" woof ")
+let B_trimmed = B.trim()
+console.log(B_trimmed);
+
+//exploring trimStart() and trimEnd()
+
+const C = ("    hi, there. Checking out this awesomeness      ");
+let C_start = C.trimStart();
+let C_end = C.trimEnd();
+let C_trim = C.trim();
+console.log(C_start);
+console.log(C_end);
+console.log(C_trim);
+
+// begin of padding
+const first = "siberia";
+const second = first.padStart(10);
+const third = first.padEnd(10);
+const fourth = first.padStart(20, '*');
+console.log(first);
+console.log(second); //output
+console.log(third);
+console.log(first.length);//checking length
+console.log(second.length);
+console.log(third.length);
+console.log(fourth);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
