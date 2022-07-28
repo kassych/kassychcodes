@@ -109,7 +109,50 @@ console.log("First Name last Character is ;" + first_upper[first_upper.length - 
 
 const age = "Iam 6 years old.";
 const index = 4;
-console.log(`The value that is indicated at ${index, "location"} is ${age.charAt(index)} years old`);
+console.log(`The value that is indicated at ${index, " the chosen location"} is ${age.charAt(index)} years old`);
+//finding out the last letter in a sentence or word
+const lastletter = age.charAt(age.length - 2);
+console.log(`The last character is letter  ` + lastletter);
+
+// using includes() method()
+
+const car = "Datsun";
+if (car.includes("Datsun")) {
+    console.log("The car called " + car + " has been found")
+} else {
+    console.log("No such car named  " + car + " here");
+}
+
+// working with the slice
+
+const country = "KENYA";
+console.log(country.slice(0, 3));
+
+//using the replace()
+
+const original = "System Administrator";
+const updated = original.replace('System', 'Database');
+console.log(original);
+console.log(updated);
+
+// using the split()
+let text = "National Insurance Agency";
+const splittedText = text.split(" ");
+console.log(splittedText[1]); // picking from the splitted array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
