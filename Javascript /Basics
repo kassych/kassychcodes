@@ -140,6 +140,50 @@ let text = "National Insurance Agency";
 const splittedText = text.split(" ");
 console.log(splittedText[1]); // picking from the splitted array
 
+// using concat()
+
+const word1 = "Kenya "; //add a space for readability... imagine a sentence, paragraph..
+const word2 = "Power"
+const complete = word1.concat(word2);
+console.log(complete);
+
+//searching a string using regex
+
+let statement = " I saw kassych using the elevator this morning";
+const check = statement.match(/kassych/g); //the expression to search for
+console.log(check); // if not found the result is null
+
+// using normalize() which has four forms that can be utilized
+
+let symbol_1 = `\u03a9`;
+let symbol_2 = `\u2126`;
+
+console.log(symbol_1);
+console.log(symbol_2);
+console.log(symbol_1 === symbol_2); // comparison shows they are not of the same codepoint  even though they have same output. 
+console.log(symbol_1.codePointAt());
+console.log(symbol_2.codePointAt());
+
+//need to normalize though
+
+const symbolOneNormalized = symbol_1.normalize('NFD'); //using canonical decomposition on both
+const symbolTwoNormalized = symbol_2.normalize('NFD');
+console.log(symbolOneNormalized === symbolTwoNormalized); //strict comparison check
+console.log(symbolOneNormalized);
+console.log(symbolTwoNormalized);
+console.log(symbolOneNormalized.codePointAt());
+console.log(symbolTwoNormalized.codePointAt());
+
+//REGULAR EXPRESSIONS
+
+
+
+
+
+
+
+
+
 
 
 
