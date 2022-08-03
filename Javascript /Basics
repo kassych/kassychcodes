@@ -179,7 +179,7 @@ console.log(symbolTwoNormalized.codePointAt());
 //creating a regular expression object using literals
 const text = "When in Rome, do what the Romans do";
 
-let myRegExpObject = /Rome/; // looking for the text Rome
+let myRegExpObject = /rome/i; // looking for the text Rome-with insensitive flag
 console.log(myRegExpObject.test(text));
 
 // creating a regular expression object using the RegExp Class
@@ -187,6 +187,10 @@ const text2 = "If you find yourself in Rome, I suppose you could check out the t
 
 let myRegExpObject2 = new RegExp('Rome'); //regexp constructor
 console.log(myRegExpObject2.test(text2));
+
+
+
+
 
 
 
