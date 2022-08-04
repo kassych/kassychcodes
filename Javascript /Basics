@@ -179,7 +179,7 @@ console.log(symbolTwoNormalized.codePointAt());
 //creating a regular expression object using literals
 const text = "When in Rome, do what the Romans do";
 
-let myRegExpObject = /rome/i; // looking for the text Rome-with insensitive flag
+let myRegExpObject = /e/i; // looking for the text Rome-with insensitive flag
 console.log(myRegExpObject.test(text));
 
 // creating a regular expression object using the RegExp Class
@@ -189,6 +189,11 @@ let myRegExpObject2 = new RegExp('Rome'); //regexp constructor
 console.log(myRegExpObject2.test(text2));
 
 
+//more practice on regexp
+
+const words = "life,michael,lime,lame,fish,lick,lone,little"; //my string sentence
+const pick = /l..k/g; //regexp to match starting with l and end with e with four char
+console.log(words.match(pick)); //will match only the words.
 
 
 
