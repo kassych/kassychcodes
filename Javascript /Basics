@@ -199,6 +199,12 @@ const kes = "200.00,250.00,800.00,1000.00,220.00,640.00,975.00,2.00";
 const kesexp = /2\../g;//singling out one number using escape character \
 console.log(kes.match(kesexp));
 
+// CLASSES
+
+//RegExp
+
+
+
 
 
 
