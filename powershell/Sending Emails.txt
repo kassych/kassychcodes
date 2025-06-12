@@ -1,1 +1,1 @@
-Send-MailMessage -SmtpServer 172.16.3.9 -Subject "TESTING PS" -Body "The Computer has been restarted" -To kassindo.g@nssfkenya.co.ke -From kassych@gmail.com
+Send-MailMessage -SmtpServer x.x.x.x -Subject "TESTING PS" -Body "The Computer has been restarted" -To email@address.com -From myemail@address.com
